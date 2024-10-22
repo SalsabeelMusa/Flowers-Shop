@@ -1,0 +1,206 @@
+:root {
+  --primary: #8b8b13;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+section {
+  padding: 2rem 9%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 2rem var(--primary);
+  background-color: #ffffff68;
+}
+.menu a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: var(--primary);
+  font-weight: bolder;
+}
+.menu a:hover {
+  text-shadow: 0 0.5rem 1rem var(--primary);
+}
+.icons a:hover {
+  color: grey;
+}
+.icons a {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+}
+.brand-name {
+  font-size: 3rem;
+  color: var(--primary);
+  font-style: italic;
+}
+.slogan {
+  margin-top: 100px;
+}
+#box {
+  display: none;
+}
+.fas.fa-bars {
+  font-size: 3rem;
+  color: grey;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.3rem solid var(--primary);
+  display: none;
+}
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./flower2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 50rem;
+}
+.home .content h2 {
+  position: relative;
+  left: 65rem;
+  bottom: 10rem;
+  font-size: 4rem;
+  color: var(--primary);
+  font-style: italic;
+}
+.home .content a {
+  position: relative;
+  left: 65rem;
+  bottom: 8rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 5rem;
+  box-shadow: 0 0.5rem 2rem var(--primary);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+.home .content a:hover {
+  background-color: white;
+  color: var(--primary);
+  transition: 0.6s linear;
+  font-size: 1.7rem;
+}
+
+/* __________________________________________________________________________________________________ */
+/* media query */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .brand-name,
+  .icons .fas,
+  .navbar .fa-bars {
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0;
+  }
+  .home .content h2 {
+    position: relative;
+    left: 34rem;
+    bottom: 10rem;
+    width: 20rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .home .content a {
+    position: relative;
+    left: 34rem;
+    bottom: 9rem;
+    font-size: 1rem;
+  }
+  .home .content a:hover {
+    background-color: white;
+    color: var(--primary);
+    transition: 0.5s linear;
+    font-size: 1.1rem;
+  }
+  .fas.fa-bars {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.5s ease;
+  }
+  #box:checked ~ .menu {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .menu a {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 3.3rem;
+    background: white;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem grey;
+  }
+  .brand-name {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 951px) {
+  .home .content h2 {
+    position: relative;
+    left: 45rem;
+    bottom: 10rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .home .content a {
+    position: relative;
+    left: 45rem;
+    bottom: 9rem;
+    font-size: 1rem;
+  }
+}
