@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="flower.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flowers</title>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="flower.css" />
   </head>
   <body>
     <header>
-        <div class="navbar">
-          <input type="checkbox" id="box">
-          <label for="box" class="fas fa-bars"></label>
+      <div class="navbar">
+        <input type="checkbox" id="box">
+        <label for="box" class="fas fa-bars"></label>
         <h1 class="brand-name">carla</h1>
-     <navbar class="menu">
+        <navbar class="menu">
         <a href="#home">home</a>
         <a href="#our-garden">our garden</a>
-        <a href="#products">products</a>
+        <a href="#products">collection</a>
         <a href="#review">review</a>
         <a href="#contact">contact</a>
       </navbar> 
-        <div class="icons">
+      <div class="icons">
         <a href="#" class="fas fa-heart"/></a>
         <a href="#" class="fas fa-shopping-cart"></a>
         <a href="#" class="fas fa-user"></a>
       </div>
     </div>
   </header>
-
+  
   <section class="home" id="home"> 
     <div class="content"> 
       <h2 class="slogan">from our garden to your heart</h2>
@@ -41,15 +42,155 @@
   <section class="our-garden" id="our-garden">
     <div class="video-background">
       <p class="caption">Experience the magic of nature's finest creations with Carla, where every petal tells a story.</p>
+      <img src="https://st.hzcdn.com/simgs/pictures/landscapes/a-blue-garden-img~0e81480d003161a9_14-9612-1-f13ebab.jpg" class="view-photo" alt="Our garden.">
+    </div>
+  </section>
+  
+  <!-- <section class="collection" id="collection">
+    <input type="radio" name="carousel" id="slide1" checked>
+    <input type="radio" name="carousel" id="slide2">
+    <input type="radio" name="carousel" id="slide3">
+    <input type="radio" name="carousel" id="slide4">
+    <input type="radio" name="carousel" id="slide5">
+  </section> -->
 
-  <video autoplay muted loop playsinline>
-    <source src="./C2_-_Made_with_Clipchamp.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<section class="products" id="products">
+  <h1 class="flower-header">our best sellers:</h1>
+  <div class="container">
+        <div class="discount">-10%</div>
+            <img class="flower-image" src="./product1.jpg" alt="flower pot">
+            <h3 class="flower-type">Elegant White Bouquet</h3>
+            <div class="price">$27.00<span>$30.00</span></div>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to Cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
 </div>
 
 
-  </section>
+<div class="container">
+  <div class="discount">-15%</div>
+  <img class="flower-image" src="./product2.jpg" alt="flower pot">
+  <h3 class="flower-type">Classic Rose Bouquett</h3>
+  <div class="price">$21.25 <span>$25</span></div>
+  <div class="icons">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="cart-btn">Add to Cart</a>
+      <a href="#" class="fas fa-share"></a>
+  </div>
+</div>
+    
+<div class="container">
+  <div class="discount">-5%</div>
+  <img class="flower-image" src="./product3.jpg" alt="flower pot">
+  <h3 class="flower-type">Classic Red Rose Bouquet</h3>
+  <div class="price">$19.00 <span>$20.00</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div> 
 
-  </body>
+<div class="container">
+  <div class="discount">-20%</div>
+  <img class="flower-image" src="./product4.jpg" alt="flower pot">
+  <h3 class="flower-type">Classic Mixed Rose Bouquet</h3>
+  <div class="price">$32 <span>$40</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+     
+ 
+</div>  
+
+<div class="container">
+  <div class="discount">-25%</div>
+  <img class="flower-image" src="./product5.jpg" alt="flower pot">
+  <h3 class="flower-type">Spring Tulip Bouquett</h3>
+  <div class="price">$37.5 <span>$50</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div> 
+
+<div class="container">
+  <div class="discount">-30%</div>
+  <img class="flower-image" src="./product6.jpg" alt="flower pot">
+  <h3 class="flower-type">Decoration Bouquet</h3>
+  <div class="price">$10.5 <span>$15</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div> 
+
+<div class="container">
+  <div class="discount">-10%</div>
+  <img class="flower-image" src="./product7.jpg" alt="flower pot">
+  <h3 class="flower-type">Lovely Purple Bouquett</h3>
+  <div class="price">$54 <span>$60</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div>
+
+<div class="container">
+  <div class="discount">-15%</div>
+  <img class="flower-image" src="./product8.jpg" alt="flower pot">
+  <h3 class="flower-type">Romantic Essence</h3>
+  <div class="price">$29.75 <span>$35</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div>
+
+<div class="container">
+  <div class="discount">-20%</div>
+  <img class="flower-image" src="./product9.jpg" alt="flower pot">
+  <h3 class="flower-type">Charming Delight</h3>
+  <div class="price">$17.60<span>$22</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div>
+
+<div class="container">
+  <div class="discount">-5%</div>
+  <img class="flower-image" src="./product10.jpg" alt="flower pot">
+  <h3 class="flower-type">Blissful Harmony</h3>
+  <div class="price">$17.10 <span>$18.0</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div>  
+
+<div class="container">
+  <div class="discount">-10%</div>
+  <img class="flower-image" src="./product11.jpg" alt="flower pot">
+  <h3 class="flower-type">Joyful Embrace</h3>
+  <div class="price">$25.20 <span>$28.00</span></div>
+      <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">Add to Cart</a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+</div>
+</section>  
+  
+</body>
 </html>

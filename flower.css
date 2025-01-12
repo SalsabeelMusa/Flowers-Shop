@@ -28,10 +28,10 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem;
+  padding: 1.2rem;
   z-index: 1000;
   box-shadow: 0 0.3rem 0.5rem rgb(187, 181, 181);
-  background-color: #ffffff68;
+  background-color: #fffffff1;
 }
 .menu a {
   font-size: 2rem;
@@ -113,77 +113,83 @@ html {
   font-size: 1.7rem;
 }
 /* our garden page style */
-/* 
-.video-container {
-  text-align: center;
-  margin: 20px 0;
-}
-
-video {
-  border: solid #8b8b13 0.3rem;
-  max-width: 100%;
-  height: 100%;
-  border-radius: 2rem;
-  display: inline-block;
-  position: relative;
-  top: 7rem;
-}
-
-.caption {
-  width: 90rem;
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 3rem;
-  color: #8b8b13;
-  display: inline-block;
-  position: relative;
-  top: 5rem;
-  letter-spacing: 0.1rem;
-} */
-
 .caption {
   width: 90rem;
   font-style: italic;
   font-weight: bolder;
   font-size: 4rem;
-  color: #ffffffad;
+  color: #c5d7cb;
   display: inline-block;
   position: absolute;
-  top: 100rem;
-  text-shadow: 0 1rem 1rem #605858b9;
+  top: 80rem;
+  left: 27rem;
+  text-shadow: 0 1rem 1rem #2c2929b9;
   text-align: center;
   z-index: 10;
 }
 
-.video-background {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  padding: 0;
-  border-top: 2rem;
+.view-photo {
+  max-width: 100%;
+  max-width: 100%;
 }
 
-video {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
+/* products  page style */
+.products .container {
   display: inline-block;
   position: relative;
-  padding: 0;
+  justify-items: center;
+  box-shadow: 0 0.5rem 1.5rem grey;
+  border-radius: 0.5rem;
+  border: 0.1rem solid grey;
+  width: 30vw;
+  height: 60vh;
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
 }
+
+.flower-image {
+  width: 15vw;
+  height: 30vh;
+}
+
+.flower-header {
+  display: block;
+  position: relative;
+  left: 50rem;
+  top: 3rem;
+  font-size: 3rem;
+  font-style: italic;
+  color: grey;
+  text-shadow: 0 0.5rem 1.5rem rgb(151, 139, 139);
+}
+
+.discount {
+  font-size: 2.5rem;
+  position: relative;
+  right: 15rem;
+  color: grey;
+  font-weight: bolder;
+}
+span {
+  font-size: 2rem;
+  text-decoration: line-through rgb(224, 48, 48);
+}
+.flower-type {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
 /* __________________________________________________________________________________________________ */
 /* media query */
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-  section {
-    padding: 2rem;
-  }
-}
 @media (max-width: 768px) {
   .navbar .brand-name,
   .icons .fas,
@@ -236,7 +242,9 @@ video {
     background: rgba(255, 255, 255, 0.511);
     border: 0.2rem solid;
     border-radius: 1rem;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 0.5rem;
     box-shadow: 0.3rem 0.3rem 1rem grey;
   }
@@ -250,17 +258,54 @@ video {
   }
 }
 @media (max-width: 951px) {
+  html {
+    font-size: 55%;
+  }
+
+  .view-photo {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-bottom: 2rem;
+  }
+
+  .caption {
+    width: 65rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 110rem;
+    left: 3rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-left: 8rem;
+    max-width: 100vw;
+    margin-bottom: 2rem;
+  }
+
+  .menu a {
+    color: gray;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    box-shadow: 0.3rem 0.3rem 1rem #63abd87d;
+    margin: 0.4rem;
+    font-style: italic;
+  }
+
   .home .content h2 {
     position: relative;
-    left: 45rem;
-    top: 2rem;
+    left: 4rem;
+    bottom: 10rem;
     font-size: 3rem;
     text-align: left;
   }
   .home .content a {
     position: relative;
-    left: 45rem;
-    top: 3rem;
+    left: 4rem;
+    bottom: 9rem;
     font-size: 1.5rem;
   }
 }
